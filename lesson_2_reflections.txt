@@ -1,0 +1,4 @@
+To create a repository:
+git init (in the directory)
+when first created, with files already in the directory, there are zero commits
+git log will show "fatal: bad default..." Better git status
