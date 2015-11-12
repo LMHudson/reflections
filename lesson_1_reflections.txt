@@ -1,0 +1,66 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    the diff reproduces only the changed sections and marks old and new with - and + respectively.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    if the changes could be linked to changes in other project files, it would permit effective rollback
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    manual permits control; automatic saves you when you forget and probably also creates finer grained snapshots.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    in some projects, it is the collection of files that matters.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    I guess git log shows the history of one file; git diff shows differences between files.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    it make me relatively bullet-proof
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    a django tutorial
+
+As a programmer, when would you want to have a version of your code saved?
+
+    after each line change, backed up by another rule, such as every hour
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+	automatic saves you when you are interrupted and forget. If you set the time period too small, or work too slowly, it will save too many versions.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	Google Docs is better suited to logging changes on files which are not interdependent.
+
+clone asteroids. What is the ID of the commit with the message “Revert controls”
+
+git log produces a list of changes:
+
+before: b0678b161fcf74467ed3a63110557e3d6229cfa6 <==this one is “revert controls”
+after: f19cb1b80fe27e938e4d72770ca0a42f25e99ecc
+
+to count lines added and subtracted: git diff ID1 ID2
+
+quiz requires me to find a bug that I cannot replicate (continuous shooting). Answer says bug introduced in commit 25ede836903881848fea811df5b687b59d962da3. Previous commit was df035382c41b4d0cda86a1aa30b53f15bef05b53. So to show how the bug was introduced: git diff these two. I diffed in the wrong direction, comparing the buggy ID with the one before it. I should have diffed the buggy ID with the one following it in time.
+I want to use Git to be able to try things without fear of being unable to undo them
+FOUR GIT COMMANDS FROM LESSON 1
+git diff (Compare two commits, earlier,later) Order determines sign of change
+git clone (Copy an entire repository to your computer)
+git checkout (Temporarily reset all files to their state at the time of a specific commit)
+git log (Show the commits, starting with the most recent)
+
+
+
+
