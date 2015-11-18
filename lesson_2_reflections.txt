@@ -2,3 +2,17 @@ To create a repository:
 git init (in the directory)
 when first created, with files already in the directory, there are zero commits
 git log will show "fatal: bad default..." Better git status
+initializing a directory will create the hidden .git database
+to add files, git add filename
+staging area gives you a chance to change your mind about what files to track?
+git diff reports difference between working directory and staging area. It reports the change to game.js. git add game.js copies new game.js file to staging area. git diff --staged shows difference between staging area and repository. git commit causes Sublime to open and permit a name for the commit, "Add delay back to bullets"
+git reset --hard discards any changes in working directory or staging area. 
+If HEAD is "detached" run git checkout master
+A good use of the staging area is to make sure each commit corresponds to one logical change
+Branches:
+git branch with no arguments produces "master"
+git branch easy-mode
+using a branch to test an idea might be easier than rolling back the code to the beginning of the experiment
+to see branch structure: git branch; to switch branches: git checkout branch-name. To retain easy-mode as a branch but merge all the changes of master into it, git checkout easy-mode, then git merge master easy-mode.
+I added yellow to coin and find no coins at all. I am out of sync.
+To represent merger of new master and easy-mode, new commit should have lines pointing to both parents
