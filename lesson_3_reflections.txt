@@ -1,1 +1,8 @@
 When would you want to use a remote repository rather than keeping all your work local?
+When collaborating. When you want to back up your local work to the cloud.
+Why might you want always to pull changes manually rather than having Git automatically stay up-to-date with your remote repository? If you are collaborating and the master version is local, you don't want to introduce changes without examining them.
+Forking is a clone within github.
+to add a file, git add FILENAME
+to commit, git commit
+to push to remote, git push -u origin master
+forks are for collaboration; clones are for copying back and forth between the local repository and the remote; branches are for experimenting while preserving alternate versions.
