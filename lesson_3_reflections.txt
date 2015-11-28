@@ -6,3 +6,4 @@ to add a file, git add FILENAME
 to commit, git commit
 to push to remote, git push -u origin master
 forks are for collaboration; clones are for copying back and forth between the local repository and the remote; branches are for experimenting while preserving alternate versions.
+Having a copy of the last known state of the remote stored locally would be permit examining the changed files without internet access
